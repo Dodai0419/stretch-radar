@@ -1,0 +1,17 @@
+stretch-radar
+Copyright (c) 2026 Dodai0419 (MIT, see LICENSE)
+
+This product includes code ported from:
+
+1. new-term-radar - https://github.com/zhuyansen/new-term-radar
+   Copyright (c) 2026 Yansen Zhu, MIT License
+   - fetch, site_urls, slug_text, terms, by_source, surges, the stop-word list and
+     the snapshot layout follow radar/sitemaps.py, radar/terms.py and radar/snap.py.
+     Changes: sites on different hosts are read in parallel (per-host pauses kept);
+     ties in surges are broken longest-phrase-first so the result no longer depends
+     on Python's string hash seed.
+
+2. cc-stretch - https://github.com/pro-vi/cc-stretch
+   Copyright (c) 2026 pro-vi, MIT License
+   - parse() is a Python port of hooks/parse.ts (the {{short|long}} markup, keys,
+     code spans and fences). The HTML viewer is new code.

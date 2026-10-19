@@ -1,0 +1,87 @@
+[
+ {
+  "sites": {
+   "toolhub": {
+    "urls": 60,
+    "new": 0,
+    "first_run": true,
+    "sample": []
+   },
+   "mcpdir": {
+    "urls": 45,
+    "new": 0,
+    "first_run": true,
+    "sample": []
+   },
+   "skillsdir": {
+    "urls": 30,
+    "new": 0,
+    "first_run": true,
+    "sample": []
+   }
+  },
+  "terms": []
+ },
+ {
+  "sites": {
+   "toolhub": {
+    "urls": 68,
+    "new": 8,
+    "first_run": false,
+    "sample": [
+     "https://toolhub.example/tools/kimi-k3-chat",
+     "https://toolhub.example/tools/qwen-image-2-1-editor",
+     "https://toolhub.example/tools/qwen-image-2-1-studio",
+     "https://toolhub.example/tools/qwen-image-2-1-upscale",
+     "https://toolhub.example/tools/seedance-3-lipsync",
+     "https://toolhub.example/tools/seedance-3-motion",
+     "https://toolhub.example/tools/seedance-3-video",
+     "https://toolhub.example/tools/voice-cloner-pro-x"
+    ]
+   },
+   "mcpdir": {
+    "urls": 50,
+    "new": 5,
+    "first_run": false,
+    "sample": [
+     "https://mcpdir.example/servers/browser-pilot-mcp",
+     "https://mcpdir.example/servers/kimi-k3-mcp",
+     "https://mcpdir.example/servers/kimi-k3-memory",
+     "https://mcpdir.example/servers/kimi-k3-search",
+     "https://mcpdir.example/servers/postgres-guard"
+    ]
+   },
+   "skillsdir": {
+    "urls": 34,
+    "new": 4,
+    "first_run": false,
+    "sample": [
+     "https://skills.example/skills/deck-polish",
+     "https://skills.example/skills/qwen-image-2-1-poses",
+     "https://skills.example/skills/qwen-image-2-1-recipes",
+     "https://skills.example/skills/seedance-3-prompting"
+    ]
+   }
+  },
+  "terms": [
+   {
+    "term": "qwen image",
+    "recent": 5,
+    "baseline": 0,
+    "lift": 5.0
+   },
+   {
+    "term": "kimi k3",
+    "recent": 4,
+    "baseline": 0,
+    "lift": 4.0
+   },
+   {
+    "term": "seedance",
+    "recent": 4,
+    "baseline": 0,
+    "lift": 4.0
+   }
+  ]
+ }
+]

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<sitemapindex xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <sitemap><loc>https://fixtures.example/mcpdir-1.xml</loc></sitemap>
+  <sitemap><loc>https://fixtures.example/mcpdir-2.xml</loc></sitemap>
+  <sitemap><loc>https://fixtures.example/mcpdir-blog.xml</loc></sitemap>
+</sitemapindex>

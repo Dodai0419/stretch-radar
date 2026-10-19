@@ -1,0 +1,237 @@
+[
+ {
+  "input": "plain text, no stretch",
+  "segments": [
+   "plain text, no stretch"
+  ]
+ },
+ {
+  "input": "A {{monad|monad is a type that wraps values}} chains steps.",
+  "segments": [
+   "A ",
+   {
+    "key": "monad",
+    "short": "monad",
+    "long": [
+     "monad is a type that wraps values"
+    ],
+    "isClosed": true
+   },
+   " chains steps."
+  ]
+ },
+ {
+  "input": "{{a|one {{b|two {{c|three}}}} end}}",
+  "segments": [
+   {
+    "key": "a",
+    "short": "a",
+    "long": [
+     "one ",
+     {
+      "key": "a › b",
+      "short": "b",
+      "long": [
+       "two ",
+       {
+        "key": "a › b › c",
+        "short": "c",
+        "long": [
+         "three"
+        ],
+        "isClosed": true
+       }
+      ],
+      "isClosed": true
+     },
+     " end"
+    ],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "{{same|x}} and {{same|y}} and {{same|z}}",
+  "segments": [
+   {
+    "key": "same",
+    "short": "same",
+    "long": [
+     "x"
+    ],
+    "isClosed": true
+   },
+   " and ",
+   {
+    "key": "same~2",
+    "short": "same",
+    "long": [
+     "y"
+    ],
+    "isClosed": true
+   },
+   " and ",
+   {
+    "key": "same~3",
+    "short": "same",
+    "long": [
+     "z"
+    ],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "{{no pipe here}} stays text",
+  "segments": [
+   {
+    "key": "",
+    "short": "no pipe here",
+    "isClosed": true
+   },
+   " stays text"
+  ]
+ },
+ {
+  "input": "unclosed {{short|long goes on",
+  "segments": [
+   "unclosed ",
+   {
+    "key": "short",
+    "short": "short",
+    "long": [
+     "long goes on"
+    ],
+    "isClosed": false
+   }
+  ]
+ },
+ {
+  "input": "code `{{not|a stretch}}` then {{real|yes}}",
+  "segments": [
+   "code `{{not|a stretch}}` then ",
+   {
+    "key": "real",
+    "short": "real",
+    "long": [
+     "yes"
+    ],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "```js\nconst o = {{a: 1}}\n```\nafter {{k|v}}",
+  "segments": [
+   "```js\nconst o = {{a: 1}}\n```\nafter ",
+   {
+    "key": "k",
+    "short": "k",
+    "long": [
+     "v"
+    ],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "multi\nline {{first\nline|grows}} done",
+  "segments": [
+   "multi\nline ",
+   {
+    "key": "first↵line",
+    "short": "first\nline",
+    "long": [
+     "grows"
+    ],
+    "isClosed": true
+   },
+   " done"
+  ]
+ },
+ {
+  "input": "{{outer|has {{inner|deep}} and {{inner|again}}}}",
+  "segments": [
+   {
+    "key": "outer",
+    "short": "outer",
+    "long": [
+     "has ",
+     {
+      "key": "outer › inner",
+      "short": "inner",
+      "long": [
+       "deep"
+      ],
+      "isClosed": true
+     },
+     " and ",
+     {
+      "key": "outer › inner~2",
+      "short": "inner",
+      "long": [
+       "again"
+      ],
+      "isClosed": true
+     }
+    ],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "~~~\n{{fenced|no}}\n~~~",
+  "segments": [
+   "~~~\n{{fenced|no}}\n~~~"
+  ]
+ },
+ {
+  "input": "{{|empty short}} {{empty long|}}",
+  "segments": [
+   {
+    "key": "",
+    "short": "",
+    "long": [
+     "empty short"
+    ],
+    "isClosed": true
+   },
+   " ",
+   {
+    "key": "empty long",
+    "short": "empty long",
+    "long": [],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "``span with ` tick {{x|y}}`` out {{p|q}}",
+  "segments": [
+   "``span with ` tick {{x|y}}`` out ",
+   {
+    "key": "p",
+    "short": "p",
+    "long": [
+     "q"
+    ],
+    "isClosed": true
+   }
+  ]
+ },
+ {
+  "input": "pipes | outside {{s|a | b}} keep",
+  "segments": [
+   "pipes | outside ",
+   {
+    "key": "s",
+    "short": "s",
+    "long": [
+     "a | b"
+    ],
+    "isClosed": true
+   },
+   " keep"
+  ]
+ }
+]

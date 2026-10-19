@@ -1,0 +1,18 @@
+{
+ "sitemaps": {
+  "toolhub": {
+   "index": "https://fixtures.example/toolhub.xml",
+   "pause": 2
+  },
+  "mcpdir": {
+   "index": "https://fixtures.example/mcpdir.xml",
+   "shards": "mcpdir-\\d+\\.xml$",
+   "pause": 2
+  },
+  "skillsdir": {
+   "index": "https://fixtures.example/skillsdir.xml",
+   "pause": 3,
+   "strip_locale": true
+  }
+ }
+}

@@ -1,0 +1,8 @@
+{"sitemaps": {
+  "ai-bot.cn":   {"index": "https://ai-bot.cn/sitemap.xml", "pause": 3},
+  "dang":        {"index": "https://dang.ai/sitemap.xml", "pause": 2},
+  "aitoptools":  {"index": "https://aitoptools.com/sitemap.xml", "pause": 2},
+  "futurepedia": {"index": "https://www.futurepedia.io/sitemap_tools.xml", "pause": 2},
+  "lobehub-mcp": {"index": "https://lobehub.com/sitemap/mcp.xml", "pause": 5, "strip_locale": true},
+  "lobehub-skills": {"index": "https://lobehub.com/sitemap/skills.xml", "pause": 5, "strip_locale": true}
+}}
